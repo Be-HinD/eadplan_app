@@ -4,7 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Ryo_ideapad_slim3/AndroidStudioProjects/Mymanager/app/src/main/res/layout/activity_login.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Ryo_ideapad_slim3/AndroidStudioProjects/Mymanager/app/src/main/res/layout/activity_main.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/Ryo_ideapad_slim3/AndroidStudioProjects/Mymanager/app/src/main/res/layout/activity_register.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Ryo_ideapad_slim3/AndroidStudioProjects/Mymanager/app/src/main/res/layout/item_list.xml" value="0.25364583333333335" />
       </map>
     </option>
   </component>

@@ -64,34 +64,23 @@
         app:layout_constraintEnd_toEndOf="@+id/et_hei"
         app:layout_constraintStart_toStartOf="@+id/et_hei"
         app:layout_constraintTop_toBottomOf="@+id/et_hei" />
-    <EditText
-        android:id="@+id/et_gen"
-        android:layout_width="200dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:hint="성별"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/et_wei"
-        app:layout_constraintStart_toStartOf="@+id/et_wei"
-        app:layout_constraintTop_toBottomOf="@+id/et_wei" />
     <RadioGroup
         android:id="@+id/genderGroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        app:layout_constraintTop_toBottomOf="@+id/et_gen">
+        app:layout_constraintTop_toBottomOf="@+id/et_wei">
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/genderWoman"
             android:checked="true"
-            android:text="여성"/>
+            android:text="femail"/>
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/genderMan"
-            android:text="남성"/>
+            android:text="mail"/>
     </RadioGroup>
 
     <Button

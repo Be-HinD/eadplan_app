@@ -21,7 +21,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class RegisterActivity extends AppCompatActivity {
-    private EditText et_id, et_pass,et_passck, et_hei, et_wei,et_gen;
+    private EditText et_id, et_pass,et_passck, et_hei, et_wei;
     private String userGender;
     private Button btn_register,validateButton;
     private RadioGroup genderGroup;
@@ -40,7 +40,6 @@ public class RegisterActivity extends AppCompatActivity {
         et_pass=findViewById(R.id.et_pass);
         et_hei=findViewById(R.id.et_hei);
         et_wei=findViewById(R.id.et_wei);
-        // et_gen=findViewById(R.id.et_gen);
         et_passck=findViewById(R.id.et_passck);
         validateButton=findViewById(R.id.validateButton);
         genderGroup = findViewById(R.id.genderGroup);         //라디오 그룹 참조하기
@@ -121,7 +120,6 @@ public class RegisterActivity extends AppCompatActivity {
                 final String userPW=et_pass.getText().toString();
                 int height=Integer.parseInt(et_hei.getText().toString());
                 int weight=Integer.parseInt(et_wei.getText().toString());
-                //String gender=et_gen.getText().toString();
                 final String PassCk=et_passck.getText().toString();
 
                 Response.Listener<String> responseListener=new Response.Listener<String>() {//volley

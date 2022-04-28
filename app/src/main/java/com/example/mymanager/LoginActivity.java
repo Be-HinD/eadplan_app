@@ -41,7 +41,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 final String userID=et_id.getText().toString();
-                String userPass=et_pass.getText().toString();
+                String userPW=et_pass.getText().toString();
 
 
                 Response.Listener<String> responseListener=new Response.Listener<String>() {
@@ -55,8 +55,8 @@ public class LoginActivity extends AppCompatActivity {
                                 String userPass = jasonObject.getString("userPW");
                                 Toast.makeText(getApplicationContext(), "로그인 성공", Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                                intent.putExtra("log", "User");
                                 intent.putExtra("userID", userID);
+                                intent.putExtra("userPW", userPW);
                                 startActivity(intent);
                             }
 
@@ -71,7 +71,7 @@ public class LoginActivity extends AppCompatActivity {
                         }
                     }
                 };
-                LoginRequest loginRequest=new LoginRequest(userID,userPass,responseListener);
+                LoginRequest loginRequest=new LoginRequest(userID,userPW,responseListener);
                 RequestQueue queue= Volley.newRequestQueue(LoginActivity.this);
                 queue.add(loginRequest);
             }
